@@ -90,7 +90,8 @@
                 showNoSuggestionNotice: false,
                 noSuggestionNotice: 'No results',
                 orientation: 'bottom',
-                forceFixPosition: false
+                forceFixPosition: false,
+                heightDelta: 25
             };
 
         // Shared variables:
@@ -855,7 +856,7 @@
                 offsetTop,
                 upperBound,
                 lowerBound,
-                heightDelta = 25;
+                heightDelta = that.options.heightDelta;
 
             if (!activeItem) {
                 return;
